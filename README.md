@@ -32,11 +32,12 @@ The same two URLs are also linked inside the app, in Settings and on the paywall
 
 ## Notes
 
-- The Privacy Policy reflects the app's actual data practices as of June 28, 2026:
+- The Privacy Policy reflects the app's actual data practices as of June 29, 2026:
   optional Apple/Google sign-in via Firebase Auth, optional cloud backup of alarms and
-  streak via Cloud Firestore, Apple StoreKit subscriptions, and on-device-only motion
-  sensing for the Shake/Walk missions. No analytics, ads, crash reporting, or
-  third-party tracking.
+  streak via Cloud Firestore, Apple StoreKit subscriptions, on-device-only motion
+  sensing for the Shake/Walk missions, an optional Screen Time uninstall guard, and
+  Firebase App Check (App Attest) for anti-abuse. Account deletion now wipes both cloud
+  and on-device data. No analytics, ads, crash reporting, or third-party tracking.
 - The Terms of Use include an alarm-reliability safety disclaimer and Apple's required
   Licensed Application End User License Agreement minimum terms.
 - Governing law in the Terms is set to **India**. Change Section 14 if the operating

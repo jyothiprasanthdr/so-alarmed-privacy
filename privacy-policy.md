@@ -1,6 +1,6 @@
 # Privacy Policy for So Alarmed
 
-**Last updated: June 28, 2026**
+**Last updated: June 29, 2026**
 
 This Privacy Policy explains how So Alarmed ("the App", "we", "us", or "our") collects, uses, stores, and protects your information. So Alarmed is an alarm clock app for iPhone. It wakes you up and asks you to finish a short wake-up mission before the alarm will stop.
 
@@ -16,7 +16,8 @@ We designed So Alarmed to be privacy-first. We do not run ads. We do not use ana
 - The Shake and Walk wake-up missions read your phone's motion sensors in real time, on your device only. That motion data is never stored and never sent anywhere.
 - We do not collect location, contacts, photos, camera, microphone, health, or advertising data.
 - We do not use analytics, advertising, or any third-party tracking.
-- You can delete your account and all backed-up data at any time inside the App, under Settings then Delete account.
+- An optional setting can stop the App from being deleted while an alarm is ringing. It uses Apple's Screen Time only to block deletion, never reads your Screen Time or usage data, and stays off unless you turn it on.
+- You can delete your account at any time inside the App, under Settings then Delete account. This removes your data from the cloud and from this device.
 
 ## 2. Information we collect
 
@@ -65,7 +66,13 @@ This motion data is processed in real time on your device, used only to confirm 
 
 So Alarmed schedules alarms using Apple's AlarmKit on iOS 26 and later, and local notifications on earlier versions. These are created and delivered on your device by iOS. We do not run a push-notification server, and we do not send your data anywhere to deliver an alarm. If you start a free trial, the App may schedule a local reminder before the trial ends. That reminder contains no personal data.
 
-### 2.7 What we do not collect
+### 2.7 Optional uninstall protection (Screen Time)
+
+So Alarmed has an optional setting, off by default, called "Block uninstall while ringing". When you turn it on, the App uses Apple's Screen Time (Family Controls) to stop the App from being deleted from your device while an alarm is actively ringing, so the only way to silence the alarm is to finish the wake-up mission. iOS asks for your permission the first time you turn this on.
+
+This setting only sets a temporary restriction while an alarm rings, and the restriction is lifted as soon as the alarm stops. It does not read your Screen Time data, your app-usage history, or any other information, and it sends nothing anywhere. You can turn it off at any time in the App's Settings, or remove Screen Time access for So Alarmed in the iOS Settings app.
+
+### 2.8 What we do not collect
 
 To be clear, So Alarmed does not collect any of the following:
 
@@ -75,6 +82,7 @@ To be clear, So Alarmed does not collect any of the following:
 - Advertising identifiers (IDFA) or any tracking identifiers
 - Analytics or usage statistics
 - Crash reports or diagnostic data
+- Your Screen Time data, app-usage history, or web activity (the optional uninstall protection only sets a restriction; it never reads your Screen Time)
 - Anything used to track you across other apps or websites
 
 ## 3. How we use your information
@@ -106,6 +114,8 @@ These providers process data for us or as independent controllers under their ow
 - Firebase Privacy and Security: https://firebase.google.com/support/privacy
 - Apple Privacy Policy: https://www.apple.com/legal/privacy/
 
+To protect the service from abuse, the App uses Firebase App Check together with Apple's App Attest. When the App talks to Firebase, it includes a token that shows the request comes from a genuine, unmodified copy of So Alarmed. This token verifies the App itself, not you. It contains no personal information and is not used to track you.
+
 We may also share information if the law requires it, for example to follow a valid legal process, or to protect our rights, safety, or the safety of others. If the App is ever part of a merger, acquisition, or sale of assets, we will require the new owner to honor this Privacy Policy.
 
 ## 5. Data storage, security, and retention
@@ -125,8 +135,8 @@ You stay in control of your data:
 
 - Use the App without an account. All core alarm features work without ever signing in, and your data stays on your device.
 - Sign out. Signing out stops any further cloud backup.
-- Delete your account and cloud data. In the App, open Settings and tap Delete account. This permanently deletes your account and all of your backed-up alarms and streak data from the cloud, in both Firebase Authentication and Cloud Firestore. Alarms already on your device stay there until you delete the App.
-- Manage permissions. You can grant or remove Motion & Fitness and Notification permissions at any time in the iOS Settings app.
+- Delete your account and your data. In the App, open Settings and tap Delete account. This permanently deletes your account and removes your alarms and wake-up streak from the cloud, in both Firebase Authentication and Cloud Firestore, and also removes them from this device. This cannot be undone.
+- Manage permissions. You can grant or remove Motion & Fitness, Notifications, and Screen Time permissions at any time in the iOS Settings app. You can also turn the optional uninstall protection on or off in the App's Settings.
 - Manage your subscription. You can manage or cancel your subscription in the App Store, under Settings, your name, then Subscriptions.
 
 For any other request about your data, email us at inandha97@gmail.com (see Section 12).
@@ -176,6 +186,7 @@ For clarity, here is how the policy maps to Apple's App Privacy labels:
 - Data not linked to you: Purchases (subscription status), used for App Functionality.
 - Data used to track you: none.
 - Data not collected: location, contacts, browsing or search history, health, sensitive information, usage or diagnostics, and advertising data. Motion data is used live and never collected or stored.
+- The optional uninstall protection (Screen Time) and our anti-abuse checks (App Check with App Attest) do not collect any data linked to you and are not used for tracking.
 
 ## 11. Changes to this Privacy Policy
 
