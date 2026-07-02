@@ -87,7 +87,7 @@
     <header>
       <div class="badge">So Alarmed</div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: June 29, 2026</p>
+      <p class="updated">Last updated: July 2, 2026</p>
       <nav class="top"><a href="terms.html">Read the Terms of Use</a></nav>
     </header>
 
@@ -95,7 +95,7 @@
 
     <p>The App is built and run by <strong>Nandha Kumar Ilangovan</strong> ("the Developer"), who is the data controller responsible for your information under this Policy.</p>
 
-    <p>We designed So Alarmed to be privacy-first. We do not run ads. We do not use analytics or tracking tools. We do not collect crash reports. We do not sell or share your personal information for advertising. Most of your data never leaves your device. By using the App, you agree to this Privacy Policy.</p>
+    <p>We designed So Alarmed to be privacy-first. The App shows no ads and contains no ad networks that display ads. We do not collect crash reports, and we do not sell your personal information. Most of your data never leaves your device. One narrow exception exists so we can tell whether our own advertising works: the App reports a few basic app events, such as installs, trial starts, and purchases, to Meta for ad measurement, as described in Sections 2.8 and 4. These events do not include your name, email, alarms, or any advertising identifier. By using the App, you agree to this Privacy Policy.</p>
 
     <div class="card">
       <h2 style="margin-top:0;border:none;padding:0">1. The short version</h2>
@@ -104,8 +104,8 @@
         <li>Signing in is optional. You only get an account if you choose to sign in with Apple or Google, and we use that account only to back up your alarms and streak so you can restore them on your other devices.</li>
         <li>We use Apple StoreKit for the optional paid subscription. We never see or store your card or payment details.</li>
         <li>The Shake and Walk wake-up missions read your phone's motion sensors in real time, on your device only. That motion data is never stored and never sent anywhere.</li>
-        <li>We do not collect location, contacts, photos, camera, microphone, health, or advertising data.</li>
-        <li>We do not use analytics, advertising, or any third-party tracking.</li>
+        <li>We do not collect location, contacts, photos, camera, microphone, health data, or advertising identifiers.</li>
+        <li>We do not show ads in the App and we do not track you across other apps or websites. To measure our own App Store ads, the App sends basic app events, like installs, trial starts, and purchases, to Meta. These events never include your name, email, alarms, or an advertising identifier.</li>
         <li>An optional setting can stop the App from being deleted while an alarm is ringing. It uses Apple's Screen Time only to block deletion, never reads your Screen Time or usage data, and stays off unless you turn it on.</li>
         <li>You can delete your account at any time inside the App, under Settings then Delete account. This removes your data from the cloud and from this device.</li>
       </ul>
@@ -155,14 +155,18 @@
     <p>So Alarmed has an optional setting, off by default, called "Block uninstall while ringing". When you turn it on, the App uses Apple's Screen Time (Family Controls) to stop the App from being deleted from your device while an alarm is actively ringing, so the only way to silence the alarm is to finish the wake-up mission. iOS asks for your permission the first time you turn this on.</p>
     <p>This setting only sets a temporary restriction while an alarm rings, and the restriction is lifted as soon as the alarm stops. It does not read your Screen Time data, your app-usage history, or any other information, and it sends nothing anywhere. You can turn it off at any time in the App's Settings, or remove Screen Time access for So Alarmed in the iOS Settings app.</p>
 
-    <h3>2.8 What we do not collect</h3>
+    <h3>2.8 Ad measurement data (Meta)</h3>
+    <p>We advertise So Alarmed on Meta platforms such as Facebook and Instagram. To know whether those ads work, the App includes the Meta SDK, which reports basic app events to Meta Platforms: that the App was installed and opened, that a free trial was started, and that a purchase was made, including its price. Like any internet connection, these reports also carry standard device information such as your device model, iOS version, and IP address.</p>
+    <p>We have switched off the SDK's collection of Apple's advertising identifier (IDFA), and the App never asks for Apple's tracking permission. These events are not linked to your account, name, email, alarms, or streak. Working out which ad led to an install happens through Apple's SKAdNetwork system, which reports in aggregate and is designed by Apple so that individual users cannot be identified. You can read how Meta handles this data in the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</p>
+
+    <h3>2.9 What we do not collect</h3>
     <p>To be clear, So Alarmed does not collect any of the following:</p>
     <ul>
       <li>Precise or approximate location</li>
       <li>Contacts, calendar, photos, camera, or microphone data</li>
       <li>Health or fitness records</li>
       <li>Advertising identifiers (IDFA) or any tracking identifiers</li>
-      <li>Analytics or usage statistics</li>
+      <li>Analytics profiles about how you use the App (the only usage events we report are the ad-measurement events in Section 2.8)</li>
       <li>Crash reports or diagnostic data</li>
       <li>Your Screen Time data, app-usage history, or web activity (the optional uninstall protection only sets a restriction; it never reads your Screen Time)</li>
       <li>Anything used to track you across other apps or websites</li>
@@ -176,12 +180,13 @@
       <li>Back up and sync your alarms and streak across your devices, if you sign in.</li>
       <li>Sign you in and keep your account secure, if you sign in.</li>
       <li>Unlock paid features based on your Apple subscription status.</li>
+      <li>Measure whether our own ads bring people to the App, using only the events described in Section 2.8.</li>
       <li>Reply to you when you contact us for support or to use a privacy right.</li>
     </ul>
-    <p>We do not use your information for advertising, profiling, or automated decisions, and we do not sell it.</p>
+    <p>Beyond that ad measurement, we do not use your information for advertising. We do not build profiles about you, we do not make automated decisions about you, and we do not sell your information.</p>
 
     <h2>4. How your information is shared</h2>
-    <p>We do not sell your personal information and we do not share it for advertising. We share information only with the service providers we need to run the App:</p>
+    <p>We do not sell your personal information. We share information only with the service providers listed below, which we need to run the App and to measure our own advertising:</p>
     <table>
       <thead>
         <tr><th>Provider</th><th>Purpose</th><th>What they receive</th></tr>
@@ -202,6 +207,11 @@
           <td>Optional Apple sign-in, subscription processing, and alarm scheduling</td>
           <td>Authentication and your subscription transaction, handled under Apple's privacy policy</td>
         </tr>
+        <tr>
+          <td>Meta SDK, run by Meta Platforms, Inc.</td>
+          <td>Measures whether our ads on Facebook and Instagram lead to installs and subscriptions (see Section 2.8)</td>
+          <td>Basic app events (install, app open, trial start, purchase and its price) and standard device info (device model, iOS version, IP address). Never your name, email, alarms, streak, or advertising identifier.</td>
+        </tr>
       </tbody>
     </table>
     <p>These providers process data for us or as independent controllers under their own privacy policies:</p>
@@ -209,6 +219,7 @@
       <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
       <li>Firebase Privacy and Security: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
       <li>Apple Privacy Policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+      <li>Meta Privacy Policy: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></li>
     </ul>
     <p>To protect the service from abuse, the App uses Firebase App Check together with Apple's App Attest. When the App talks to Firebase, it includes a token that shows the request comes from a genuine, unmodified copy of So Alarmed. This token verifies the App itself, not you. It contains no personal information and is not used to track you.</p>
     <p>We may also share information if the law requires it, for example to follow a valid legal process, or to protect our rights, safety, or the safety of others. If the App is ever part of a merger, acquisition, or sale of assets, we will require the new owner to honor this Privacy Policy.</p>
@@ -258,8 +269,8 @@
       <li>Opt out of the sale or sharing of personal information.</li>
       <li>Not be treated differently for using your privacy rights.</li>
     </ul>
-    <p>We do not sell or share your personal information as those terms are defined under the CCPA and CPRA, and we have not done so in the past 12 months. We do not knowingly sell or share the personal information of anyone under 16.</p>
-    <p>The categories of personal information we may collect are identifiers, meaning account ID, email, and name, and commerce information, meaning subscription status, collected only as described above. To use your California rights, email us at <a href="mailto:inandha97@gmail.com">inandha97@gmail.com</a>. You may use an authorized agent to make a request for you.</p>
+    <p>We do not sell your personal information, and we have not sold it in the past 12 months. As described in Section 2.8, the App sends basic ad-measurement events to Meta; these events are not linked to identifiers such as your name, email, or advertising ID. To the extent this counts as "sharing" under the CPRA, you can contact us at the email below and we will help you exercise your opt-out rights. We do not knowingly sell or share the personal information of anyone under 16.</p>
+    <p>The categories of personal information we may collect are identifiers, meaning account ID, email, and name, commerce information, meaning subscription status, and internet or network activity information, meaning the basic app events used for ad measurement, collected only as described above. To use your California rights, email us at <a href="mailto:inandha97@gmail.com">inandha97@gmail.com</a>. You may use an authorized agent to make a request for you.</p>
 
     <h2>9. Children's privacy</h2>
     <p>So Alarmed is not directed to children under 13, or the equivalent minimum age in your country, such as 16 in parts of the EEA. We do not knowingly collect personal information from children. If you believe a child has given us personal information, email us at <a href="mailto:inandha97@gmail.com">inandha97@gmail.com</a> and we will delete it.</p>
@@ -268,9 +279,9 @@
     <p>For clarity, here is how the policy maps to Apple's App Privacy labels:</p>
     <ul>
       <li>Data linked to you, only if you sign in: Contact Info (name and email) and Identifiers (account ID), used for App Functionality, meaning account backup and sync. Not used for tracking.</li>
-      <li>Data not linked to you: Purchases (subscription status), used for App Functionality.</li>
-      <li>Data used to track you: none.</li>
-      <li>Data not collected: location, contacts, browsing or search history, health, sensitive information, usage or diagnostics, and advertising data. Motion data is used live and never collected or stored.</li>
+      <li>Data not linked to you: Purchases (subscription status and purchase events) and Product Interaction (basic app events such as installs, app opens, and trial starts), used for App Functionality, Analytics, and measuring our own advertising. Not used for tracking.</li>
+      <li>Data used to track you: none. We never collect the advertising identifier and never request Apple's tracking permission.</li>
+      <li>Data not collected: location, contacts, browsing or search history, health, sensitive information, diagnostics, and the advertising identifier. Motion data is used live and never collected or stored.</li>
       <li>The optional uninstall protection (Screen Time) and our anti-abuse checks (App Check with App Attest) do not collect any data linked to you and are not used for tracking.</li>
     </ul>
 
@@ -289,7 +300,7 @@
     <footer>
       <hr />
       <p><a href="terms.html">Terms of Use</a></p>
-      Copyright 2026 Nandha Kumar Ilangovan. So Alarmed. Last updated June 29, 2026.
+      Copyright 2026 Nandha Kumar Ilangovan. So Alarmed. Last updated July 2, 2026.
     </footer>
   </div>
 </body>
